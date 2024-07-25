@@ -6,11 +6,11 @@ const formData = {
 };
 
 populateForm ()
-
+// відстеження подій на формі
 form.addEventListener('input', handleFormInput)
 form.addEventListener('submit', handleFormSubmit)
 
-
+// функція для обробки введених даних
 function handleFormInput(event) {
     const value = event.target.value.trim();
     const key = event.target.name.trim();

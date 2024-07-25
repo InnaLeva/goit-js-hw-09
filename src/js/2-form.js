@@ -5,10 +5,10 @@ const formData = {
     message: ""
 };
 
-populateForm ()
+populateForm();
 // відстеження подій на формі
-form.addEventListener('input', handleFormInput)
-form.addEventListener('submit', handleFormSubmit)
+form.addEventListener('input', handleFormInput);
+form.addEventListener('submit', handleFormSubmit);
 
 // функція для обробки введених даних
 function handleFormInput(event) {
@@ -19,8 +19,8 @@ function handleFormInput(event) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData))
 
     console.log(key, value);
-
 }
+
 function populateForm() {
     const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
     if (!savedFormData) {
